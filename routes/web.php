@@ -19,16 +19,16 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('login',function(){
+Route::get('/login',function(){
     return view('login');
 });
 
-Route::get('about',function(){
-    return('about');
+Route::get('/about',function(){
+    return view('about');
 });
 
 Route::get('/portfolio',function(){
-    return('portfolio');
+    return view('portfolio');
 });
 
 
