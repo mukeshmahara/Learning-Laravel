@@ -11,25 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\PagesController;
 
-Route::get('/home', function () {
-    return view('home');
-});
+Route::get('/', 'PagesController@welcome');
 
-Route::get('/login',function(){
-    return view('login');
-});
+Route::get('/index', 'PagesController@index');
 
-Route::get('/about',function(){
-    return view('about');
-});
+Route::get('/login','PagesController@about');
 
-Route::get('/portfolio',function(){
-    return view('portfolio');
-});
+Route::get('/about','PagesController@login');
+
+Route::get('/portfolio','PagesController@portfolio');
 
 
 
