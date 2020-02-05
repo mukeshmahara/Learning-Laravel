@@ -19,8 +19,17 @@ Route::get('/home', function () {
     return view('home');
 });
 
-Route::get('/portfolio',function(){
-    return('pages.portfolio');
+Route::get('login',function(){
+    return view('login');
 });
+
+Route::get('about',function(){
+    return('about');
+});
+
+Route::get('/portfolio',function(){
+    return('portfolio');
+});
+
 
 
