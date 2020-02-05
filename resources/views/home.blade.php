@@ -16,7 +16,7 @@
         text-align: center;
     }
 </style>
-    <h1>Welcome to Laravel zone</h1>
+    <h1>Welcome to Laravel Zone</h1>
     
 </body>
 </html>
