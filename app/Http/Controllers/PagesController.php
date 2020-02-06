@@ -8,22 +8,27 @@ class PagesController extends Controller
 {
     //
     public function index(){
-        return view('pages.index');
+        $title ='Welcome to Laravel';
+        return view('pages.index', compact('title'));
     }
 
     public function about(){
-        return view('pages.about');
+        $title = 'About Page';
+        return view('pages.about',compact('title'));
     }
 
     public function portfolio(){
-        return view('pages.portfolio');
+        $title = 'My Portfolio'; 
+        return view('pages.portfolio',compact('title'));
     }
 
     public function login(){
-        return view('pages.login');
+        $title = 'login Page';
+        return view('pages.login', compact('title'));
     }
 
     public function welcome(){
-        return view('pages.welcome');
+        $title = 'Welcome';
+        return view('pages.welcome', compact('title'));
     }
 }
