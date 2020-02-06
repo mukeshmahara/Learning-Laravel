@@ -17,9 +17,9 @@ Route::get('/', 'PagesController@welcome');
 
 Route::get('/index', 'PagesController@index');
 
-Route::get('/login','PagesController@about');
+Route::get('/login','PagesController@login');
 
-Route::get('/about','PagesController@login');
+Route::get('/about','PagesController@about');
 
 Route::get('/portfolio','PagesController@portfolio');
 
