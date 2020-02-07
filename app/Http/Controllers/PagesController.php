@@ -13,12 +13,13 @@ class PagesController extends Controller
     }
 
     public function about(){
-        $title = 'About Page';
-        return view('pages.about',compact('title'));
+        $title = 'About us';
+        // return view('pages.about',compact('title'));
+        return view('pages.about')->with('title',$title); 
     }
 
     public function portfolio(){
-        $title = 'My Portfolio'; 
+        $title = 'My Portfolio';  
         return view('pages.portfolio',compact('title'));
     }
 
