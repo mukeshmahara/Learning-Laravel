@@ -5,6 +5,6 @@
 
     <h1>{{$post->body}}</h1>
     
-    <div class="btn btn-default"><a href="./public">Go Back</a></div>
+    <div class="btn btn-default"><a href="./">Go Back</a></div>
 
 @endsection
