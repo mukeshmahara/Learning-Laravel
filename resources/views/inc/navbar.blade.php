@@ -3,18 +3,20 @@
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="">SMS</a>
+      <a class="navbar-brand" href="">Learning Laravel</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <span class="caret"></span></a>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Notice<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Student Info</a></li>
-          <li><a href="#">Results Publication</a></li>
-          <li><a href="#">Enrollment</a></li>
+          <li><a href="#">Admision</a></li>
+          <li><a href="#">Students</a></li>
+          <li><a href="#">Exams</a></li>
         </ul>
       </li>
-      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Portfolio</a></li>
+      
+      <li><a href="#">Contact</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
