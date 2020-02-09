@@ -25,3 +25,5 @@ Route::get('/portfolio','PagesController@portfolio');
 
 
 
+Route::resource('posts','PostsController');
+
