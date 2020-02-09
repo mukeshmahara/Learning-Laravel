@@ -12,7 +12,7 @@
         @endforeach
 
         {{$posts->links()}}
-        
+         
     @else
         <P>No post found</P>
         
