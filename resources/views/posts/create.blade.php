@@ -5,7 +5,7 @@
     {!!Form::open(['action'=>'PostsController@store','method'=>'POST']) !!}
         <div class="form-group">
             {!!Form::label('title','Title')!!}
-            {!!Form::text('title','',['class'=>'form-control','placeholder'=>'Tilte'])!!}
+            {!!Form::text('title','',['class'=>'form-control','placeholder'=>'Tilte' ])!!}
         </div>
 
         <div class="form-group">
