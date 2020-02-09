@@ -2,8 +2,9 @@
 
 @section('content')
 
-<a href="./" class="btn btn-default">Go Back</a>
 
     <h1>{{$post->body}}</h1>
+    
+    <div class="btn btn-default"><a href="./public">Go Back</a></div>
 
 @endsection
