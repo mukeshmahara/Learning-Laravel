@@ -11,8 +11,8 @@
         <div class="form-group">
             {!!Form::label('body','Title')!!}
             {!!Form::textarea('body','',['class'=>'form-control','placeholder'=>'body'])!!}
-        </div>
-        
+        </div> 
+
         {{Form::submit('Submimt',['class'=>'btn btn-primary'])}}
     {!! Form::close() !!}
     
