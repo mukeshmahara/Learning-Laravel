@@ -1,3 +1,6 @@
 {
-    "git.ignoreLimitWarning": true
+    "git.ignoreLimitWarning": true,
+    "phpstormFormatter.ideBinPath": "phpstormFormatter.ideBinPath",
+    "phpstormFormatter.styleGuidePath": "phpstormFormatter.styleGuidePath",
+    "blade.format.enable": true
 }
