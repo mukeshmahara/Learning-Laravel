@@ -13,7 +13,8 @@
             {!!Form::textarea('body',$post->body,['class'=>'form-control','placeholder'=>'body'])!!}
         </div> 
         {{Form::hidden('_method','PUT')}}
-        {{Form::submit('Submimt',['class'=>'btn btn-primary'])}}
+        {{Form::submit('Submit',['class'=>'btn btn-primary'])}}
+        <a href="./" class="btn btn-warning">Cancel</a>
     {!! Form::close() !!}
     
     
