@@ -16,8 +16,8 @@
             </div> --}}
             <div class="row">
                 <div class="col-sm-4">
-                  <div class="card">
-                    <div class="card-body">
+                  <div class="card bg-secondary mb-3">
+                    <div class="card-body well">
                     <h3 class="card-title">{{$post->title}}</h3>
                     <small>Create at {{$post->created_at}}</small>
                     <p class="card-text">{{$post->body}}</p>
