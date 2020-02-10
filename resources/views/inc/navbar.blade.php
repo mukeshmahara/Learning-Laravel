@@ -1,5 +1,3 @@
-
-  
 <nav class="navbar navbar-inverse">
   <div class="container">
     <div class="navbar-header">
@@ -7,29 +5,54 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="./">Home</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"> Notice<span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Admision</a></li>
-          <li><a href="#">Students</a></li>
-          <li><a href="#">Exams</a></li>
-        </ul>
-      </li>
+      <li><a href="./posts/create"><span class="glyphicon glyphicon-edit"></span> Create Post</a></li>
       <li><a href="./portfolio">Portfolio</a></li>
-      
+
       <li><a href="./about">About</a></li>
       <li><a href="./posts">Blog</a></li>
-      
+
     </ul>
+    
+
+    <!-- Authentication Links -->
     <ul class="nav navbar-nav navbar-right">
-      {{-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> --}}
-      <li><a href="./posts/create"><span class="glyphicon glyphicon-edit"></span> Create Post</a></li>
+      
+    
+        @guest
+        
+        <li class="nav-item">
+          <a class="nav-link" href="{{ route('login') }}"><span class="glyphicon glyphicon-log-in">&nbsp;</span>{{ __('Login') }}</a>
+        </li>
+        @if (Route::has('register'))
+        <li class="nav-item">
+          <a class="nav-link" href="{{ route('register') }}"><span class="glyphicon glyphicon-user">&nbsp;</span>{{ __('Register') }}</a>
+        </li>
+        
+        @endif
+        @else
+        <li class="nav-item dropdown">
+          <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false" v-pre>
+            {{ Auth::user()->name }} <span class="caret"></span>
+          </a>
+  
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
+                                     document.getElementById('logout-form').submit();">
+              {{ __('Logout') }}
+            </a>
+  
+            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+              @csrf
+            </form>
+          </div>
+        </li>
+  
+        @endguest
+     
+      
     </ul>
 
   </div>
 </nav>
-  
-<div class="container">
-  
-</div>
 
