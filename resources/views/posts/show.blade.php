@@ -19,14 +19,8 @@
             </div>
              
             <div class="pull-right">
-
-                {!!Form::open(['action'=>['PostsController@destroy',$post->id],'method'=>'POSt'])!!}
-                
-                <a href="./{{$post->id}}/edit" class="btn btn-default">Edits</a>
-                {{ Form::hidden('_method','DELETE')}}
-                {{Form::submit('Delete',['class'=>'btn btn-default '])}}
                 <a href="./" class="btn btn-default ">Go Back</a>
-                {!!Form::close()!!}
+                
                 <hr>
             </div>
 
