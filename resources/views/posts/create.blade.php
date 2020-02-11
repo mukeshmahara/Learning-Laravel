@@ -7,7 +7,7 @@
 
 </div>
 <hr>
-{!!Form::open(['action'=>'PostsController@store','method'=>'POST']) !!}
+{!!Form::open(['action'=>'PostsController@store','method'=>'POST','enctype'=>'multipart/form-data']) !!}
 <div class="form-group">
     {!!Form::label('title','Title')!!}
     {!!Form::text('title','',['class'=>'form-control','placeholder'=>'Tilte' ])!!}
@@ -18,9 +18,20 @@
     {!!Form::textarea('body','',['class'=>'form-control','placeholder'=>'body'])!!}
 </div>
 
-{{Form::submit('Submimt',['class'=>'btn btn-primary'])}}
-<a href="./" class="btn btn-warning"> Cancel</a>
-{!! Form::close() !!}
+<div style="padding-top: 3%">
+
+    {{Form::file('cover_image')}}
+
+</div>
+
+
+
+<div style="padding-top: 3%">
+    {{Form::submit('Submimt',['class'=>'btn btn-primary'])}}
+    <a href="./" class="btn btn-warning"> Cancel</a>
+    {!! Form::close() !!}
+
+</div>
 
 
 
