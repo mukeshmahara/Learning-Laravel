@@ -18,11 +18,11 @@
     {!!Form::textarea('body','',['class'=>'form-control','placeholder'=>'body'])!!}
 </div>
 
-<div style="padding-top: 3%">
+{{-- <div style="padding-top: 3%">
 
     {{Form::file('cover_image')}}
 
-</div>
+</div> --}}
 
 
 
