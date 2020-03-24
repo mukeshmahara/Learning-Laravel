@@ -14,7 +14,7 @@
   <div class="row">
     <div class="col-sm-4">
       <div class="card bg-secondary mb-3">
-        <div class="card-body well">
+        <div class="card-body">
           <h3 class="card-title">{{$post->title}}</h3>
           <small>Create at {{$post->created_at}} by {{$post->user->name}}</small>
           <p class="card-text">{{$post->body}}</p>
